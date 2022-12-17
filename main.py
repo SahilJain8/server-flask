@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 app=Flask(__name__)
-
+app.config['SERVER_NAME'] = 'localhost:5000'
 
 app.secret_key = "secret key"
 
