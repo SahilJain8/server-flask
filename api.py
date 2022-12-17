@@ -20,6 +20,6 @@ def get_data(source):
 
    
     if max(output)*100>70:
-        return max(output)
+        return True
     else:
-        return max(output)
+        return False
