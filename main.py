@@ -1,5 +1,5 @@
 from flask import Flask,jsonify,request
-from summary import do_it
+
 from api import get_data
 import warnings
 
@@ -23,8 +23,7 @@ def index():
 def pred():
     if request.method=="POST":
         text_data=request.form["text"]
-        if len(text_data)>500:
-            text_data=do_it(text_data)
+   
             
 
         check=get_data(text_data)
